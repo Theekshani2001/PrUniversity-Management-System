@@ -1,0 +1,78 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #2c3e50;
+}
+
+.dashboard {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #34495e;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.task-button {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.task-button:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border: 2px solid #3498db;
+}
+
+.task-button img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.task-button p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+    .buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+}

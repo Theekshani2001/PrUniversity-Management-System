@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container form-container">
+    <h1 class="form-title">Add Society</h1>
+    <form class="society-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+            <label for="societyName">Society Name</label>
+            <input type="text" class="form-control" id="societyName" placeholder="Enter society name" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="Enter description about society" required>
+        </div>
+        <div class="form-group">
+            <label for="numOfSocietyMembers">Number Of Society Members</label>
+            <input type="number" class="form-control" id="numOfSocietyMembers" placeholder="Enter number of society members" required>
+        </div>
+        <div class="form-group">
+            <label for="teacherInCharge">Teacher InCharge</label>
+            <input type="text" class="form-control" id="teacherInCharge" required>
+        </div>
+        <div class="form-group">
+            <label for="imgUrl">Image Url</label>
+            <input type="text" class="form-control" id="imgUrl" placeholder="Enter image url" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update academic staff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container form-container">
+    <h1 class="form-title">Update Academic Staff</h1>
+
+    <form id="updatedForm" onsubmit="updateAcademicStaff(event)">
+
+
+        <div class="form-group">
+            <label for="updatedId">Academic Staff Id</label>
+            <input type="text" class="form-control" id="updatedId" placeholder="Enter id" readonly>
+        </div>
+        <div class="form-group">
+            <label for="updatedAcademicEmail">Academic Email</label>
+            <input type="email" class="form-control" id="updatedAcademicEmail" placeholder="Enter academic email" required>
+        </div>
+        <div class="form-group">
+            <label for="updatedName">Name</label>
+            <input type="text" class="form-control" id="updatedName" placeholder="Enter name" required>
+        </div>
+        <div class="form-group">
+            <label for="updatedBirthdate">Birth Date</label>
+            <input type="date" class="form-control" id="updatedBirthdate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="updatedPosition">Position</label>
+            <input type="text" class="form-control" id="updatedPosition" placeholder="Enter position" required>
+        </div>
+
+        <div class="form-group">
+            <label for="updatedAddress">Address</label>
+            <input type="text" class="form-control" id="updatedAddress" placeholder="Enter address" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="updatedFaculty">Faculty</label>
+            <input type="text" class="form-control" id="updatedFaculty" placeholder="Enter faculty" required>
+        </div>
+        <div class="form-group">
+            <label for="updatedImgUrl">Image Url</label>
+            <input type="text" class="form-control" id="updatedImgUrl" placeholder="Enter image url" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

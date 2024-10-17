@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+
+.logo {
+    width: 350px;
+    animation: fadeInLogo 1s ease-in-out;
+}
+
+@keyframes fadeInLogo {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.button {
+    background: #ff5f6d;
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.admin-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f093fb;
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+    padding: 12px 25px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.3);
+}

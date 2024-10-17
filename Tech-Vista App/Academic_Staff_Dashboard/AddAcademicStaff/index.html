@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container form-container">
+    <h1 class="form-title">Add Academic Staff</h1>
+    <form class="academicStaff-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+            <label for="academicEmail">Academic Email</label>
+            <input type="email" class="form-control" id="academicEmail" placeholder="Enter academic mail" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+        </div>
+        <div class="form-group">
+            <label for="birthdate">Birth Date</label>
+            <input type="date" class="form-control" id="birthdate" required>
+        </div>
+        <div class="form-group">
+            <label for="position">Position</label>
+            <input type="text" class="form-control" id="position" placeholder="Enter position" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter address" required>
+        </div>
+        <div class="form-group">
+            <label for="faculty">Faculty</label>
+            <input type="text" class="form-control" id="faculty" placeholder="Enter faculty" required>
+        </div>
+        <div class="form-group">
+            <label for="imgUrl">Image Url</label>
+            <input type="text" class="form-control" id="imgUrl" placeholder="Enter image url" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
